@@ -1,2 +1,2 @@
-# Where-s-My-Money-
+# Where's My Money?-
 Expense Tracker application
