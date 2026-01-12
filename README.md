@@ -1,24 +1,20 @@
-# Where's My Money?-
+# Where’s My Money? 💸
 
-Expense Tracker application
+A MERN stack expense tracking application.
 
-# Current Goals-
+## Status
 
-## MVP
+🚧 In development
 
-### Auth
+## Planned Stack
 
-- User Registration
-- User Login (JWT-based)
+- MongoDB
+- Express
+- React
+- Node.js
 
-### Expenses
+## Goals
 
-- Add Expense (amount, category, date, note)
-- View Expenses (list)
-- Edit Expense
-- Delete Expense
-
-### Optional
-
-- Monthly Totals
-- Categories (Food, Rent, Transport, etc.)
+- Track expenses
+- Categorize spending
+- Monthly summaries
