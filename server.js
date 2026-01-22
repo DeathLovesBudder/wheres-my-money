@@ -3,7 +3,10 @@ import express from "express";
 const app = express();
 const PORT = 5000;
 
+//--------------
 //Middleware
+//--------------
+
 app.use(express.json());
 app.use((req, res, next) => {
   if (req.url === "/favicon.ico") {
@@ -37,13 +40,10 @@ app.post("/api/expenses", (req, res) => {
   });
 });
 
-app.post("/api/echo", (req, res) => {
-  res.status(201).json({
-    receivedBody: req.body
-  });
-});
+//--------------
+// Server Start
+//--------------
 
-//Server Start
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
