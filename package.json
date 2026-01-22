@@ -1,0 +1,28 @@
+{
+  "name": "wheres-my-money",
+  "version": "1.0.0",
+  "description": "A MERN stack expense tracking application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeathLovesBudder/wheres-my-money.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/DeathLovesBudder/wheres-my-money/issues"
+  },
+  "homepage": "https://github.com/DeathLovesBudder/wheres-my-money#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
