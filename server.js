@@ -3,7 +3,7 @@ import express from "express";
 const app = express();
 const PORT = 5000;
 
-//Middelware
+//Middleware
 app.use(express.json());
 app.use((req, res, next) => {
   if (req.url === "/favicon.ico") {
@@ -14,11 +14,16 @@ app.use((req, res, next) => {
   next();
 });
 
-//Routes
+//--------------
+// Routes
+//--------------
+
+//GET
 app.get("/api/health", (req, res) => {
   res.json({ status: "ok" });
 });
 
+//POST
 app.post("/api/expenses", (req, res) => {
   const { title, amount } = req.body;
 
@@ -29,6 +34,12 @@ app.post("/api/expenses", (req, res) => {
   res.status(201).json({
     message: "Expense created",
     expense: { title, amount }
+  });
+});
+
+app.post("/api/echo", (req, res) => {
+  res.status(201).json({
+    receivedBody: req.body
   });
 });
 
